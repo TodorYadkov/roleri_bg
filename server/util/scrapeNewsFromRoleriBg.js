@@ -1,7 +1,18 @@
 import puppeteer from 'puppeteer';
+import chromium from '@sparticuz/chromium'; // Import the @sparticuz/chromium library
 
 const scrapeNewsFromRoleriBg = async () => {
-    const browser = await puppeteer.launch();
+    // Configure Puppeteer to use the @sparticuz/chromium library
+    chromium.setGraphicsMode = false;
+
+    // Launch Puppeteer with the @sparticuz/chromium settings
+    const browser = await puppeteer.launch({
+        args: chromium.args,
+        defaultViewport: chromium.defaultViewport,
+        executablePath: await chromium.executablePath(),
+        headless: chromium.headless,
+    });
+
     const page = await browser.newPage();
 
     await page.goto('https://roleri.bg/');
