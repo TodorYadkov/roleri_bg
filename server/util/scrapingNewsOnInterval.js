@@ -1,8 +1,8 @@
 import { ScrapedNews } from "../models/ScrapedNews.js";
-
 import { scrapeNewsFromRoleriBg } from "./scrapeNewsFromRoleriBg.js";
 
 let intervalId;
+
 export async function scrapingNewsOnInterval() {
     const timeToCheck = 1; // Interval time in hours
     const intervalTimeToMilliseconds = timeToCheck * 60 * 60 * 1000;
@@ -25,7 +25,7 @@ async function scrapeAndSaveNews() {
         }
 
     } catch (error) {
-        throw new Error('Error while scraping and saving news:', error);
+        throw new Error('Error while scraping and saving news: ' + error);
     }
 }
 
