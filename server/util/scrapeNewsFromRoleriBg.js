@@ -1,5 +1,5 @@
 import puppeteer from 'puppeteer';
-import chromium from '@sparticuz/chromium'; // Import the @sparticuz/chromium library
+import chromium from '@sparticuz/chromium';
 
 const scrapeNewsFromRoleriBg = async () => {
     // Configure Puppeteer to use the @sparticuz/chromium library
