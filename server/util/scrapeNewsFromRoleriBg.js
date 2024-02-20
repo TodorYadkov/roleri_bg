@@ -40,7 +40,7 @@ const scrapeNewsFromRoleriBg = async () => {
     });
 
     await browser.close();
-
+    console.log('news: ', news)
     return news;
 };
 
