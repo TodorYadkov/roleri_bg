@@ -1,0 +1,130 @@
+.list {
+  height: 100%;
+  display: flex;
+  gap: 0rem;
+  align-items: center;
+  font-size: 1.8rem;
+}
+
+.menuPanel {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.lang {
+  width: 3.5rem;
+  margin-right: 1rem;
+}
+.listItem {
+  height: 100%;
+  padding: 0 0.1rem;
+}
+.listItemBtn {
+  width: 100%;
+  height: 100%;
+}
+
+.link:link,
+.link:visited,
+.link:active,
+.listItemBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-nav-link);
+  text-decoration: none;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.link:hover {
+  background-color: var(--color-nav-hover);
+  border-radius: 0.3rem;
+  color: var(--active-text);
+}
+
+.link:hover > .linkBorder {
+  border-bottom: 1px var(--border-bottom);
+}
+
+.linkBorder {
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid transparent;
+}
+
+.themeChanger,
+.themeChanger:hover {
+  background-color: unset;
+}
+.iconBtn {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+@media (max-width: 760px) {
+  .menuPanel {
+    height: auto;
+    align-self: flex-start;
+    flex-direction: column;
+    background-color: var(--color-footer-bg);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    padding: 6rem 1rem 3rem;
+    border: 1px solid var(--color-footer-bg);
+    border-radius: 0.3rem;
+  }
+  .lang {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+  }
+
+  .list {
+    width: 15rem;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1; */
+    font-size: 2rem;
+  }
+
+  .listItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    /* padding: 2rem 0; */
+    border: 0.1rem solid transparent;
+    border-bottom: 1px solid var(--color-body);
+    border-radius: 0.3rem;
+  }
+
+  .link:link,
+  .link:visited,
+  .link:active,
+  .listItemBtn {
+    width: 100%;
+    color: #ededed;
+    padding: 2rem 1rem;
+  }
+  .listItemBtn {
+    padding: 0;
+  }
+
+  .iconBtn {
+    margin-bottom: 0.3rem;
+    height: 5rem;
+  }
+  .isMobileBorder {
+    border: 1px solid var(--input-border);
+  }
+}
+@media (max-width: 600px) {
+}

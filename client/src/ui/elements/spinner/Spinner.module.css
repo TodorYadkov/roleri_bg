@@ -1,0 +1,25 @@
+.spinnerBlock {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 96px;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.rotate {
+  width: 100%;
+  /* margin: 50% auto; */
+  transform: translate(50%, 50%);
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}

@@ -1,0 +1,39 @@
+.heading {
+  width: fit-content;
+  align-self: center;
+  margin-bottom: 3rem;
+  border-bottom: 0.2rem solid var(--color-main-btn);
+}
+.lessons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 4rem;
+}
+
+.scrollToTop {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .lessons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+  }
+  .scrollToTop {
+    display: block;
+    background-color: var(--color-main-btn);
+    width: fit-content;
+    position: fixed;
+    right: 5%;
+    top: 92%;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+  }
+}
+@media (max-width: 600px) {
+  .lessons {
+    gap: 4rem;
+  }
+}

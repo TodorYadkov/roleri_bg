@@ -1,0 +1,33 @@
+.primary {
+  width: fit-content;
+  background-color: var(--color-main-btn);
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding: 0.2rem 1.5rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+}
+.primary:hover {
+  background-color: var(--color-main-btn-tint);
+}
+
+.secondary {
+  /* color: var(--color-body); */
+  color: var(--color-body);
+}
+.small {
+  font-size: 2.4rem;
+  color: var(--color-body);
+  /* transition: all 0.3s ease; */
+}
+.menu {
+  color: var(--color-menu-btn);
+  position: absolute;
+  top: -0.5rem;
+  right: 0;
+  font-size: 1.8rem;
+}
+
+.navLink {
+  text-decoration: none;
+}

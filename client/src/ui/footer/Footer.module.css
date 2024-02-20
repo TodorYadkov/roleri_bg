@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-footer-bg);
+  margin-top: auto;
+  padding: 0.2rem 1rem;
+  font-size: 1.2rem;
+  color: var(--color-footer-fonts);
+}
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.title {
+  /* color: var(--color-title); */
+  color: rgb(199, 14, 14);
+  cursor: pointer;
+}
+.title span {
+  font-weight: 700;
+}
+
+.smallest {
+  display: none;
+}
+
+@media (max-width: 765px) {
+}
+@media (max-width: 600px) {
+  .smallest {
+    display: none;
+  }
+}
